@@ -21,9 +21,22 @@
 		7695070C2D21E8100032CA11 /* sfml_game-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sfml_game-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		7656F1E52D23E93B00079ED8 /* Exceptions for "Headers" folder in "Compile Sources" phase from "sfml_game" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 769506E42D21E5C90032CA11 /* Sources */;
+			membershipExceptions = (
+				Player.h,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7656F1C92D228DD200079ED8 /* Headers */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7656F1E52D23E93B00079ED8 /* Exceptions for "Headers" folder in "Compile Sources" phase from "sfml_game" target */,
+			);
 			path = Headers;
 			sourceTree = "<group>";
 		};
@@ -121,6 +134,7 @@
 				TargetAttributes = {
 					769506E82D21E5C90032CA11 = {
 						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
 					};
 				};
 			};
@@ -278,6 +292,7 @@
 		769506FF2D21E5C90032CA11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = sfml_game/sfml_game.entitlements;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -286,12 +301,14 @@
 				INFOPLIST_FILE = "sfml_game/sfml_game-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
 		769507002D21E5C90032CA11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = sfml_game/sfml_game.entitlements;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +317,7 @@
 				INFOPLIST_FILE = "sfml_game/sfml_game-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};

@@ -6,6 +6,8 @@
 //  Copyright © 2024 Amirreza. All rights reserved.
 //
 
+/*
+
 #include "Game1.h"
 
 void Game::initVariables() {
@@ -84,11 +86,6 @@ void Game::initEnemies() {
 }
 
 void Game::spawnEnemies() {
-    /*
-         @return void
-     
-         spawns enemies and sets their colors and positions.
-     */
     this->enemy.setPosition(static_cast<float>(rand() % static_cast<int>(this->window->getSize().x - this->enemy.getSize().x)), 0.f);
     int type = rand() % 5;
     
@@ -213,3 +210,4 @@ void Game::render() {
     this->renderText(*this->window);
     this->window->display();
 }
+*/
